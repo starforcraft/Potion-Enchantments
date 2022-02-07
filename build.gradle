@@ -77,7 +77,6 @@ minecraft {
             workingDirectory project.file('run')
 
             property 'forge.logging.markers', 'REGISTRIES,REGISTRYDUMP'
-
             property 'forge.logging.console.level', 'debug'
 
             // property 'mixin.env.disableRefMap', 'true'
@@ -104,6 +103,7 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:${jei_version}")
 
     implementation fg.deobf("curse.maven:potionsmaster-356801:3393230")
+    implementation fg.deobf("curse.maven:cyclic-239286:3585192")
 }
 
 jar {
